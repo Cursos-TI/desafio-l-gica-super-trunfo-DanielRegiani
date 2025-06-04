@@ -4,13 +4,13 @@ int main(){
 
     //carta 1
 
-    char estadoA[20] = "A";
+    char estadoA[20] = "A"; // utilizar o formato '%s'
     char codigoA[20] = "A01";
     char nomeA[20] = "sao_paulo";
-    signed long int populacaoA = 12325000;
-    float areaA = 1521.11;
+    signed long int populacaoA = 12325000; // utilizar o formato '%ld'
+    float areaA = 1521.11; // utilizar o formato '%f'
     float pibA = 69279997952.00;
-    int numeropontosturisticosA = 50;
+    int numeropontosturisticosA = 50; // utilizar o formato '%d'
     float densidade_populacionalA = (populacaoA / areaA);
     float pib_per_capitaA = (pibA / populacaoA);
     float superpoderA;
@@ -35,7 +35,7 @@ int main(){
     printf("Estado: %s \n", estadoA);
     printf("Codigo: %s \n", codigoA);
     printf("Nome da Cidade: %s \n", nomeA);
-    printf("Populacao: %d Milhoes de Habitantes\n", populacaoA);
+    printf("Populacao: %ld Milhoes de Habitantes\n", populacaoA);
     printf("Area: %.2f km2\n", areaA);
     printf("PIB: %.2f Bilhoes de Reais\n", pibA);
     printf("Numero de pontos Turisticos: %d \n", numeropontosturisticosA);
@@ -49,7 +49,7 @@ int main(){
     printf("Estado: %s \n", estadoB);
     printf("Codigo: %s \n", codigoB);
     printf("Nome da Cidade: %s \n", nomeB);
-    printf("Populacao: %d Milhoes de Habitantes\n", populacaoB);
+    printf("Populacao: %ld Milhoes de Habitantes\n", populacaoB);
     printf("Area: %.2f km2\n", areaB);
     printf("PIB: %.2f Bilhoes de Reais\n", pibB);
     printf("Numero de pontos Turisticos: %d \n", numeropontosturisticosB);
@@ -147,11 +147,11 @@ int main(){
             printf("PIB DO\n");
             printf("ESTADO DE SAO PAULO E DE 69279997952.00\n");
             printf("CARTA 1 VENCEU A PARTIDA!\n");
-      } else if (pibA < pibB){
+      } else if (pibA < pibB) {
             printf("CARTA 1 PERDEU!\n");
             printf("PIB DA CARTA 2 É 300499992576.00\n");
             printf("VENCEDOR E RIO DE JANEIRO!\n");
-         } else if (pibA = pibB) {
+         } else if (pibA == pibB) {
             printf("EMPATE!");
          }
          break;
